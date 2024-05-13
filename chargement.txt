@@ -1,0 +1,9 @@
+compréhension du diagramme de séquence : 
+
+le main instancie un élément chargeur de type ChargeurMagasin, qui exécute la fonction chargerMagasin() qui instancie magasin de type Magasin. 
+
+	Ensuite, chargeur instancie un élément chargecd1 de type ChargeurCD avec comme paramètre un fichier, et utilise la méthode chargerCD puis instancie un élément cd1 de type CD avec comme paramètres un artiste et un nom de cd.
+
+ChargeCd1 utilise ensuite la méthode extrairePiste() pis ajoute la piste au cd1, et ce deux fois de suite.
+
+Le ChargeurMagasin ajoute enfin le cd au magasin et termine le programme.
