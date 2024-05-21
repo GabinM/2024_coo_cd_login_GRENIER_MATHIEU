@@ -7,6 +7,8 @@ import org.junit.Test;
 
 import XML.ChargeurCD;
 import XML.ChargeurMagasin;
+import donnees.ComparateurAlbum;
+import donnees.ComparateurArtiste;
 import donnees.Magasin;
 
 public class TestTri {
@@ -17,7 +19,7 @@ public class TestTri {
         
         Magasin m = c.chargerMagasin();
 
-        m.trierAlbum();
+        m.trier(new ComparateurAlbum());
         /*for(int i = 0; i < m.getNombreCds(); i++){
             System.out.println(m.getCd(i).getTitre());
         }*/
@@ -34,13 +36,13 @@ public class TestTri {
         
         Magasin m = c.chargerMagasin();
 
-        m.trierAriste();
+        m.trier(new ComparateurArtiste());
         /*for(int i = 0; i < m.getNombreCds(); i++){
             System.out.println(m.getCd(i).getTitre());
         }*/
         
 
-        if (!(m.getCd(0).getTitre().equals("Les Risques du métier") && m.getCd(m.getNombreCds()-1).getTitre().equals("Essence ordinaire") )){
+        if (!(m.getCd(0).getTitre().equals("Bénabar") && m.getCd(m.getNombreCds()-1).getTitre().equals("Essence ordinaire") )){
             throw new Error("Ordre incorrect");
         }
     }

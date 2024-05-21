@@ -97,6 +97,10 @@ public class CD {
 		return (resultat);
 	}
 
+	public int getNbPiste(){
+		return this.pistes.size();
+	}
+
 	public String getTitre(){
 		return this.nomCD;
 	}
