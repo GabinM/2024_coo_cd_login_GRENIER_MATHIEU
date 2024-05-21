@@ -56,7 +56,7 @@ public class Magasin {
 	}
 	
 	/**
-	 * permet d'acceder à un CD
+	 * permet d'acceder ï¿½ un CD
 	 * 
 	 * @return le cd a l'indice i ou null si indice est non valide
 	 */
@@ -68,6 +68,63 @@ public class Magasin {
 		return(res);
 	}
 
-	// TODO  ajouter une methode de tri
+	public void trierAlbum(){
+
+		for(CD c : this.listeCds){
+			System.out.println(c.getTitre());
+		}
+		System.out.println("(((((((((((((((((())))))))))))))))))");
+
+		ArrayList<CD> res = new ArrayList<CD>();
+
+		while(this.listeCds.size() >0){
+			CD cd = this.listeCds.get(0);
+			for(int i = 0;i< this.listeCds.size();i++){
+				if (this.listeCds.get(i).estPlusGrandTitre(cd) < 0){
+					cd = this.listeCds.get(i);
+					
+				}
+				
+			}
+
+			res.add(cd);
+			this.listeCds.remove(cd);
+			
+		}
+		this.listeCds = res;
+		System.out.println("size : "+res.size());
+		for(CD c : res){
+			System.out.println(c.getTitre());
+		}
+	}
+
+	public void trierAriste(){
+		for(CD c : this.listeCds){
+			System.out.println(c.getTitre());
+		}
+		System.out.println("(((((((((((((((((())))))))))))))))))");
+
+		ArrayList<CD> res = new ArrayList<CD>();
+
+		while(this.listeCds.size() >0){
+			CD cd = this.listeCds.get(0);
+			for(int i = 0;i< this.listeCds.size();i++){
+				if (this.listeCds.get(i).estPlusGrandArtiste(cd) < 0){
+					cd = this.listeCds.get(i);
+					
+				}
+				
+			}
+
+			res.add(cd);
+			this.listeCds.remove(cd);
+			
+		}
+		this.listeCds = res;
+		System.out.println("size : "+res.size());
+		for(CD c : res){
+			System.out.println(c.getTitre());
+		}
+	}
 
 }

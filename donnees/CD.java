@@ -97,5 +97,19 @@ public class CD {
 		return (resultat);
 	}
 
-	// TODO 
+	public String getTitre(){
+		return this.nomCD;
+	}
+
+	public String getArtiste(){
+		return this.nomArtiste;
+	}
+
+	public int estPlusGrandTitre(CD cd){
+		return this.nomCD.compareToIgnoreCase(cd.getTitre());
+	}
+
+	public int estPlusGrandArtiste(CD cd){
+		return this.nomArtiste.compareToIgnoreCase(cd.getArtiste());
+	}
 }

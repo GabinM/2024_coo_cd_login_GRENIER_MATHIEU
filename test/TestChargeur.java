@@ -19,7 +19,7 @@ class TestChargeur {
     public  void test_02_chargerinvalide() throws Exception{
         boolean raised = true;
         try{
-            ChargeurMagasin c = new ChargeurMagasin("../musiqueCerveauSimple");
+            ChargeurMagasin c = new ChargeurMagasin("./musiqueCerveauSimple");
             c.chargerMagasin();
         } catch (Exception e){
             System.out.println("erreur déclenchée avec succès");
