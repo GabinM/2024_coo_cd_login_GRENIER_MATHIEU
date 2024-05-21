@@ -1,0 +1,20 @@
+Question 3 
+
+les conséquence d'ajouter un nouveau tri serai la duplicatication de code .On devrait modofié tous les classe pour ajouté une méthode de trie .sa semble assez difficile a maintenir sur le long terme 
+
+
+Question 4 
+
+Oui on a éfféctue un copier coller pour les méthode et les méthode qu'on a copié coller sont les méthode de tri qui sont pas mal identique .
+Si une partie de codé se révéler bugger alors tous le reste serai faux .
+
+
+Question 5
+
+Le code commun entre les méthode de tri sont les boucle et le rendue et les partie de code différent sont les partie bien spécifique a se que l'on recherche(partie crucial).
+
+
+question 6
+
+Sa impacterai notre code car on devra ecrire plusieur fois les methode de trie.  
+Si on devait refaire une nouvelle méthode de tri bien sur qu'on conservera certaine partie 
